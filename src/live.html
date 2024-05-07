@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Faker Live"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">		
+			@@include('html/live.html',{})
+			<div class="sectLogoLg">
+				@@include('html/sect-logo.html',{})
+			</div>	
+			<div class="brandSearchLg">
+				@@include('html/brand-search.html',{})
+			</div>
+			<div class="contactsLg">
+				@@include('html/contacts.html',{})
+			</div>		
+		</main>
+		@@include('html/footer.html',{})
+		@@include('html/modal.html',{})
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

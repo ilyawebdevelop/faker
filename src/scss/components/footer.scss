@@ -1,0 +1,109 @@
+// Footer
+.footer {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  background-color: #1B1B1B;
+  @media(max-width: 991px){
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+  @media(max-width: 575px){
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+  }
+
+  &W {
+    align-items: flex-end;
+    @media(max-width: 991px){
+      align-items: flex-start;
+    }
+    &.grid {
+      @media(max-width: 991px){
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  &L {
+    grid-column: 6 span;
+
+    @media(max-width: 1400px) {
+      grid-column: 5 span;
+    }
+
+    @media(max-width: 1199px) {
+      grid-column: 4 span;
+    }
+
+    @media(max-width: 991px) {
+      grid-column: 12 span;
+    }
+  }
+
+  &R {
+    grid-column: 6 span;
+
+    @media(max-width: 1400px) {
+      grid-column: 7 span;
+    }
+
+    @media(max-width: 1199px) {
+      grid-column: 8 span;
+    }
+
+    @media(max-width: 991px) {
+      grid-column: 12 span;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &Phone {
+    margin-bottom: 1.5rem;
+    @media(max-width: 767px){
+      font-size: 1.6rem;
+    }
+  }
+
+  &Mail {
+    margin-top: 4rem;
+    @media(max-width: 767px){
+      font-size: 1.6rem;
+      margin-top: 2.5rem;
+    }
+  }
+
+  &Socials {
+    margin-top: 6rem;
+    @media(max-width: 991px){
+      margin-top: 4rem;
+    }
+
+    ul {
+      li {
+        a {
+          width: 6.9rem;
+          height: 6rem;
+          padding: 1rem;
+          @media(max-width: 575px){
+            width: 4.5rem;
+            height: 4.5rem;
+            padding: .7rem;
+          }
+        }
+      }
+    }
+  }
+
+  &Logo {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10rem;
+      @media(max-width: 991px){
+        display: none;
+      }
+    }
+  }
+}

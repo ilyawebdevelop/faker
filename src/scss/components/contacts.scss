@@ -1,0 +1,85 @@
+.contacts {
+  overflow: hidden;
+  &W {
+    @media(max-width: 991px){
+    display: flex;
+    flex-direction: column;
+    }
+  }
+  &Left {
+    grid-column: 8 span;
+  }
+
+  &Right {
+    grid-column: 4 span;
+    @media(max-width: 991px){
+      height: 7rem;
+    }
+  }
+
+  &Socials {
+    margin-top: 6rem;
+    @media(max-width: 991px){
+      margin-top: 4rem;
+    }
+  }
+
+  &Address {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    font-weight: 500;
+    max-width: 78rem;
+    margin-top: 6rem;
+    @media(max-width: 991px){
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-top: 2rem;
+      max-width: 35rem;
+    }
+  }
+
+  &Phone {
+    font-size: 3.6rem;
+    margin-top: 6rem;
+    @media(max-width: 991px){
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+  }
+  &Logo {
+    width: 68rem;
+    min-width: 68rem;
+    right: 15rem;
+    position: relative;
+    bottom: 10rem;
+    @media(max-width: 991px){
+      width: 16rem;
+      height: 14rem;
+      min-width: 16rem;
+     right: unset;
+     left: 20rem;
+    }
+    &--sm {
+      display: none;
+      @media(max-width: 991px){
+        display: block;      
+      }
+    }
+    &--lg {
+      @media(max-width: 991px){
+        display: none;
+      }
+    }
+  }
+}
+.contactsLg{
+  @media(max-width: 991px){
+    display: none;
+  }
+}
+.contactsSm{
+  display: none;
+  @media(max-width: 991px){
+    display: block;
+  }
+}

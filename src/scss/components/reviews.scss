@@ -1,0 +1,49 @@
+.reviews {
+  &Title {
+    margin-bottom: 10rem;
+    @media(max-width: 1400px){
+      margin-bottom: 6rem;
+    }
+    @media(max-width: 991px){
+      margin-bottom: 3rem;
+    }
+  }
+  &Slider {
+    padding: 0 20rem;
+    @media(max-width: 1600px){
+      padding: 0 15rem;
+     }
+     @media(max-width: 1199px){
+      padding: 0 10rem;
+     }
+     @media(max-width: 991px){
+      padding: 0 5rem;
+     }
+     @media(max-width: 575px){
+      padding: 0 4rem;
+     }
+  }
+  &Slide {
+    &Img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.reviewsNav{
+  display: flex;
+  justify-content: space-between; 
+  z-index: 1; 
+  .navArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    &Prev {
+      left: 0;
+    }
+    &Next {
+      right: 0;
+    }
+  }
+}

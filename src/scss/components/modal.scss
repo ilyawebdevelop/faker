@@ -1,0 +1,47 @@
+// modal
+.modal {
+  display: none;
+  width: 60rem;
+  padding: 5rem;
+
+  @media(max-width: 420px) {
+    padding: 3rem;
+  }
+
+  .h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    @media(max-width: 575px){
+     font-size: 2rem; 
+    }
+  }
+
+  &Head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &Descr {
+    margin-top: 1.5rem;
+    max-width: 35rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &Content {
+    position: relative;
+    z-index: 1;
+  }
+
+
+  .f-button {
+    position: unset;
+    background-color: transparent;
+    justify-content: flex-end;
+  }
+}
+
+.fancybox__content {
+  color: #000;
+}
+

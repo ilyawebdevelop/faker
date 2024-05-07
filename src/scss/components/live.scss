@@ -1,0 +1,46 @@
+.live {
+  &Block {
+    align-items: center;
+    column-gap: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    @media(max-width: 991px){
+      flex-direction: column;
+      row-gap: 4rem;
+    }
+    @media(max-width: 1400px){
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+  }
+  &Img {
+    border-radius: 50px;
+    height: 42rem;
+    width: 100%;
+    object-fit: cover;
+    min-width: 55rem;
+    @media(max-width: 991px){
+
+    }
+    @media(max-width: 575px){
+      min-width: unset;
+      height: 65vw;
+      border-radius: 30px;
+    }
+  }
+  &.bg--green {
+    background: url('@img/bg/bg-green-live.png') no-repeat top center / contain;
+  }
+  &.bg--white-live {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 86rem;
+      height: 92rem;
+      background: url('@img/bg/bg-white-live.png') no-repeat center center / contain;
+    }
+  }
+}

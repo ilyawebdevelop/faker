@@ -1,0 +1,119 @@
+.gal {
+  &Sm {
+    &Slide {
+
+      &Img {
+        height: 22rem;
+        border-radius: 38px;
+        transition: opacity .2s linear;
+        width: 100%;
+        object-fit: cover;
+        @media(max-width: 991px){
+          height: 17rem;         
+        }
+        @media(max-width: 767px){
+          height: 10rem;
+          border-radius: 16px;
+        }
+        @media(max-width: 575px){
+          height: 45vw;
+        }
+
+        &:hover {
+          opacity: .85;
+        }
+      }
+    }
+
+    &Slider {
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+    }
+  }
+
+  &Lg {
+    &Slider {
+     padding: 0 20rem;
+     @media(max-width: 1600px){
+      padding: 0 15rem;
+     }
+     @media(max-width: 1199px){
+      padding: 0 10rem;
+     }
+     @media(max-width: 991px){
+      padding: 0 5rem;
+     }
+     @media(max-width: 575px){
+      padding: 0 4rem;
+     }
+      .navW {
+        justify-content: space-between;
+      }
+    }
+    &Slide {
+      &Img {
+        width: 100%;
+        height: 64rem;
+        object-fit: cover;
+        border-radius: 76px;
+        @media(max-width: 1400px){
+          border-radius: 50px;
+          height: 50rem;
+        }
+        @media(max-width: 991px){
+          height: 40rem;
+        }
+        @media(max-width: 767px){
+          height: 30rem;
+        }
+        @media(max-width: 575px){
+          height: 50vw;
+          border-radius: 13px;
+        }
+      }
+      .youtubeBtn {
+        img {
+          width: 10rem;
+          @media(max-width: 767px){
+            width: 4rem;
+          }
+        }
+      }
+    }
+  }
+}
+.galLgNav{
+  display: flex;
+  justify-content: space-between; 
+  z-index: 1; 
+  .navArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    &Prev {
+      left: 0;
+    }
+    &Next {
+      right: 0;
+    }
+  }
+}
+.galSmSlider {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 2.7rem;
+  @media(max-width: 991px){
+    column-gap: 2rem;
+  }
+  @media(max-width: 575px){
+    row-gap: 4rem;
+  }
+  .galSmSlide {
+    grid-column: 4 span;
+    position: relative;
+    @media(max-width: 575px){
+      grid-column: 12 span;
+    }
+  }
+}

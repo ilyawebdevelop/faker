@@ -1,0 +1,75 @@
+.intro {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  @media(max-width: 1400px){
+    padding-top: 4rem;
+  }
+  @media(max-width: 991px){
+    padding-top: 2rem;
+  }
+  @media(max-width: 991px){
+    padding-bottom: 0;
+  }
+  &Slide {
+    border-bottom: 1px solid #545454;
+    border-top: 1px solid #545454;
+    &Img {
+      height: 53rem;
+      width: 100%;
+      object-fit: cover;
+      @media(max-width: 1199px){
+        height: 45vw;
+      }
+      @media(max-width: 991px){
+        height: 40vw;
+      }
+    }
+  }
+  &Descr {
+    max-width: 110rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3.7rem;
+    text-align: center;
+    font-size: 2.8rem;
+    @media(max-width: 1400px){
+      font-size: 2.4rem;
+      margin-top: 3rem;
+    }
+    @media(max-width: 991px){
+      font-size: 1.2rem;
+      margin-top: 1.2rem;
+    }
+  }
+  &Action {
+    margin-top: 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    .socials {
+      ul {
+        @media(max-width: 991px){
+          max-width: 25rem;
+        }
+        @media(max-width: 575px){
+          column-gap: 1rem;
+        }
+      }
+    }
+  }
+}
+.introNavContainer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.introNavW {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}

@@ -1,0 +1,39 @@
+// стили для свайпера
+@import "../../node_modules/swiper/swiper-bundle.min";
+
+// fancybox
+@import './fancybox';
+
+// aos
+@import './aos';
+
+// Базовые подключения
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'reset';
+@import 'specifications';
+
+// Подключения компонентов страницы
+@import "./components/btn";
+@import "./components/burger";
+@import "./components/modal";
+@import "./components/tabs";
+@import "./components/socials";
+@import "./components/header";
+@import "./components/brands";
+@import "./components/product";
+@import "./components/contacts";
+@import "./components/model";
+@import "./components/history";
+@import "./components/service";
+@import "./components/live";
+@import "./components/gal";
+@import "./components/intro";
+@import "./components/reviews";
+
+
+@import "./components/footer";
+
+
+
