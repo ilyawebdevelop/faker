@@ -103,6 +103,8 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 2.7rem;
+  position: relative;
+  z-index: 2;
   @media(max-width: 991px){
     column-gap: 2rem;
   }
