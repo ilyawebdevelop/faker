@@ -210,7 +210,11 @@
 }
 .serviceGrid{
   column-gap: 5rem;
+  @media(max-width: 991px){
+    row-gap: 4rem;
+  }
   @media(max-width: 575px){
     column-gap: 1.4rem;
+    row-gap: 1.4rem;
   }
 }

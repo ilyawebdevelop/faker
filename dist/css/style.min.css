@@ -5688,9 +5688,15 @@ img.grid-col-2 {
 .serviceGrid {
   column-gap: 5rem;
 }
+@media (max-width: 991px) {
+  .serviceGrid {
+    row-gap: 4rem;
+  }
+}
 @media (max-width: 575px) {
   .serviceGrid {
     column-gap: 1.4rem;
+    row-gap: 1.4rem;
   }
 }
 
