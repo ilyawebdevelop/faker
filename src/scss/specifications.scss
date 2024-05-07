@@ -651,11 +651,18 @@ img {
 
 
 .navArrow {
-
+  @media(max-width: 767px){
+    width: 24px;
+  }
+  &.swiper-button-disabled {
+    display: none;
+  }
   img {
     width: 24px;
     @media(max-width: 767px) {
       width: 10px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

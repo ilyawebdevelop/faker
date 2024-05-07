@@ -3775,12 +3775,22 @@ img.grid-col-2 {
   }
 }
 
+@media (max-width: 767px) {
+  .navArrow {
+    width: 24px;
+  }
+}
+.navArrow.swiper-button-disabled {
+  display: none;
+}
 .navArrow img {
   width: 24px;
 }
 @media (max-width: 767px) {
   .navArrow img {
     width: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -4148,6 +4158,8 @@ img.grid-col-2 {
     background-color: #3c3c3c;
     width: 100%;
     left: 0;
+    height: calc(100% - 71px);
+    overflow-y: scroll;
   }
 }
 .headerNav.active {
@@ -4321,8 +4333,6 @@ img.grid-col-2 {
   display: flex;
   column-gap: 6px;
   margin-bottom: 0.9rem;
-  position: relative;
-  left: 4px;
 }
 
 .emptyBlock {
@@ -4344,6 +4354,8 @@ img.grid-col-2 {
   display: flex;
   column-gap: 2px;
   margin-top: 2rem;
+  left: -4px;
+  position: relative;
 }
 .headerAddress span {
   font-size: 13px;
@@ -5955,6 +5967,10 @@ img.grid-col-2 {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+.introNavW .navArrow.swiper-button-disabled {
+  display: block;
+  opacity: 0.2;
 }
 
 .reviewsTitle {
