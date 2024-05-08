@@ -37,7 +37,7 @@ var mySwiperProductThumb = new Swiper(productSliderThumb, {
     1400: {
       slidesPerView: 5,
       spaceBetween: 25,
-    },   
+    },
   },
 });
 
@@ -183,7 +183,7 @@ btnMenu?.addEventListener('click', function (e) {
   e.stopPropagation();
   toggleMenu();
   toggleBurger();
-  bodyOverflow(); 
+  bodyOverflow();
 });
 
 btnClose?.addEventListener('click', function (e) {
@@ -191,3 +191,13 @@ btnClose?.addEventListener('click', function (e) {
 });
 
 
+let headerSearchForm = document.querySelector('.headerSearchForm');
+let headerSearchBtn = document.querySelector('.headerSearchBtn');
+let headerSearchClose = document.querySelector('.headerSearchClose');
+
+headerSearchBtn.addEventListener('click', () => {
+  headerSearchForm.classList.toggle('active');
+});
+headerSearchClose.addEventListener('click', () => {
+  headerSearchForm.classList.remove('active');
+});

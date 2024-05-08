@@ -4126,6 +4126,7 @@ img.grid-col-2 {
   }
 }
 .headerW {
+  position: relative;
   display: flex;
   align-items: center;
   column-gap: 6rem;
@@ -4360,6 +4361,40 @@ img.grid-col-2 {
 .headerAddress span {
   font-size: 13px;
   max-width: 310px;
+}
+
+.headerSearchForm {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.headerSearchForm.active {
+  display: block;
+  -webkit-animation: shows 0.5s;
+  animation: shows 0.5s;
+}
+.headerSearchForm input {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 23px;
+  padding-left: 43px;
+  color: #000;
+}
+@media (max-width: 991px) {
+  .headerSearchForm input {
+    border-radius: 11px;
+  }
+}
+
+.headerSearchClose {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .brandsW {
